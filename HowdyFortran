@@ -1,0 +1,36 @@
+# Howdy Fortran
+
+There are many cons to being raised in the South like mosquitos and country music about bar-b-q stains on my white t-shirt, but there are many pros as well. Such as knowing a well placed y'all can be useful and as underrated as Fortran. 
+
+```fortran
+Program HelloWorld
+
+	print *, "Howdy y'all!"
+
+End Program HelloWorld
+```
+
+The above is pretty much the simplest Fortran program you can write. It simply writes "Howdy y'all!" in the console window. But let's break it down piece by piece anyways.
+
+## Case Sensitivity
+
+>  There is no case sensitivity by default in Fortran. `Program` is the same as `PROGRAM` is the same as `program`.
+
+Some compilers may offer compiler flags that alter this, but standard Fortran has no case sensitivity. This can be strange to some people used to other programming languages. Personally, I like the choice as I believe it encourages better name usage.
+
+## `program` Keyword
+
+> The `Program` keyword denotes a starting point for an executable piece of code. It is followed by a label (`HelloWorld`). The label can be any valid name.
+
+I believe it is good practice to use `Main` or something similar for your program name when working on large projects with one entry point. This is because the program's purpose should be obvious through context, and naming a program `Main` or something similar makes usage much clearer to other's who may inherit your code. However, throughout this tutorial series I will be naming the programs descriptively, so it will be more obvious to you for future reference. 
+
+## Names
+
+> Golden Rule of Naming: Always strive to make names contextually clear. An ideal name has as much information as is necessary and no more. 
+
+Fortran names can use letters (`a-z`, `A-Z`), numbers (`0-9`), and underscores (`_`). They may not start with a number or an underscore. Some compilers will allow the use of `$` as well.
+
+## `print` Keyword
+
+> `print` allows the programmer to display text to the console. 
+
